@@ -23,6 +23,7 @@ require('colors');
 // route files
 const auth = require('./api/auth');
 const user = require('./api/user');
+const job = require('./api/job');
 const app = express();
 // Body Parser
 
@@ -69,6 +70,9 @@ app.use(express.static(path.join(__dirname, 'public'), options));
 // Use Routes
 app.use('/api/v1/auth', auth);
 app.use('/api/v1/user', user);
+
+app.use('/api/v1/job',job);
+
 app.get('*.*', express.static('./public/frontend')); // production
 
 app.all('*', (req, res) => {
