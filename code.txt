@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n, m, h, w, max_e = INT_MIN;
+        cin >> n;
+        cin >> m;
+        int a[n][m];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                cin >> a[i][j];
+                max_e = max(a[i][j], max_e);
+            }
+        }
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                if (a[i][j] == max_e)
+                {
+                    h = max(i, n - i);
+                    w = max(j, n - j);
+                    cout << h * w << endl;
+                    return;
+                }
+            }
+        }
+    }
+}
