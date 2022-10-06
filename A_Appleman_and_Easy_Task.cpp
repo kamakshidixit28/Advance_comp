@@ -40,14 +40,15 @@ signed main()
         }
     }
 
-    if(ans)
-    {
-        cout<<"YES";
-    }
-    else
-    {
-        cout<<"NO";
-    }
+     cout<<(ans? "true":"false");
+    // if(ans)
+    // {
+    //     cout<<"YES";
+    // }
+    // else
+    // {
+    //     cout<<"NO";
+    // }
 
 
 }
