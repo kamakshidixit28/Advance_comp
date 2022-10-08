@@ -40,7 +40,7 @@ signed main()
         }
     }
 
-     cout<<(ans? "true":"false");
+     cout<<(ans? "true":"false")<<"\n";
     // if(ans)
     // {
     //     cout<<"YES";
