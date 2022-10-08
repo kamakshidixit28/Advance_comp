@@ -7,7 +7,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n, m, h, w, max_e = INT_MIN;
+        int n, m, height, width, max_e = INT_MIN;
         cin >> n;
         cin >> m;
         int a[n][m];
@@ -25,9 +25,9 @@ int main()
             {
                 if (a[i][j] == max_e)
                 {
-                    h = max(i, n - i);
-                    w = max(j, n - j);
-                    cout << h * w << endl;
+                    height = max(i, n - i);
+                    width = max(j, n - j);
+                    cout << height * width << endl;
                     return;
                 }
             }
