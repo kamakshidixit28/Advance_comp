@@ -18,7 +18,7 @@ This is the basic template of Backend Server using NodeJS and Express connected 
 5. You are ready to use this now. Just add API's alike the User folder inside API folder and connect route at server.js .
 6. Hit Star 😍 if you find this useful.
 
- ## Acknowledgement
+ ## Acknowledgement for the knowledge
 
 * Made with &#9829; for Community to fasten development process.
 * “If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.”
