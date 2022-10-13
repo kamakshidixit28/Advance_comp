@@ -23,6 +23,7 @@ exports.addPost = asyncHandler(async(req, res, next) =>{
 }  
 
     const post = await Post.create(body);
+    const put = await Post.create(body);
     return res.status(200).json({
     success: true,
     message: `Post added successfully`,
